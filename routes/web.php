@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ProjectController@show');
+Route::get('/project/{id}', 'ProjectController@edit');
+Route::get('/project/update/{id}', 'ProjectController@update');
+Route::get('/project/create', 'ProjectController@create');
+Route::get('/project/delete/{id}', 'ProjectController@delete');
+
+Route::get('/tasks', 'TaskController@show');
+Route::get('/tasks/{id}', 'TaskController@edit');
+Route::get('/tasks/create', 'TaskController@create');
+Route::get('/tasks/update', 'TaskController@update');
+Route::get('/tasks/delete', 'TaskController@delete');
