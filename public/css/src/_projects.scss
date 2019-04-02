@@ -1,0 +1,26 @@
+#projects{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul li{
+        width: 33.333333%;
+        background-color: map-get($colors, secondary);
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    ul li:nth-child(odd){
+        margin: 0 10px;
+    }
+    
+    ul li h3{
+        color: map-get($colors, title);
+    }
+
+    ul li p{
+        color: map-get($colors, primary);
+        padding-left: 15px;
+    }
+}

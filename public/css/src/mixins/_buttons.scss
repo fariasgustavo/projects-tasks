@@ -1,0 +1,26 @@
+.button{
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.button.delete{ 
+    background-color: map-get($colors, delete); 
+}
+
+.button.create{
+    background-color: map-get($colors, create);
+}
+
+.button.form{
+    background-color: map-get($colors, secondary);
+    border: 1px solid map-get($colors, secondary);
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 120px;
+    letter-spacing: 2px;
+}
+

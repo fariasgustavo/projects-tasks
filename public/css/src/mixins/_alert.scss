@@ -1,0 +1,20 @@
+.alerts{
+    text-align: center;
+
+    ul{
+        margin-bottom: 0;
+
+        li{
+            margin-bottom: 10px;
+        }
+    
+        li:last-child{
+            margin: 0;
+        }
+    }
+}
+
+.alert{
+    display: inline-block;
+    margin: 0;
+}

@@ -12,10 +12,11 @@
 */
 
 Route::get('/', 'ProjectController@show');
-Route::get('/project/{id}', 'ProjectController@edit');
 Route::get('/project/update/{id}', 'ProjectController@update');
 Route::get('/project/create', 'ProjectController@create');
+Route::post('/project/create/new', 'ProjectController@new');
 Route::get('/project/delete/{id}', 'ProjectController@delete');
+Route::get('/project/{id}', 'ProjectController@edit');
 
 Route::get('/tasks', 'TaskController@show');
 Route::get('/tasks/{id}', 'TaskController@edit');

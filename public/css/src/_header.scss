@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+header{
+    padding: 10px 0;
+
+    h1{
+        font-family: 'Righteous', cursive;
+        text-transform: uppercase;
+        color: map-get($colors, secondary);
+        display: inline-block;
+    }
+
+    a{
+        margin-top: 10px;
+    }
+}
