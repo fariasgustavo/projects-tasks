@@ -22,8 +22,6 @@ class Task extends Migration
         });
 
         Schema::table('tasks', function (Blueprint $table) {
-            $table->integer('project_id');
-        
             $table->foreign('project_id')->references('id')->on('projects');
         });
     }
