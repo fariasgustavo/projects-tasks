@@ -13,7 +13,7 @@ class Task extends Migration
      */
     public function up()
     {
-        Schema::create('projects', function (Blueprint $table) {
+        Schema::create('tasks', function (Blueprint $table) {
             $table->increments('id');
             $table->boolean('completed');
             $table->string('description');
@@ -21,7 +21,7 @@ class Task extends Migration
             $table->timestamps();
         });
 
-        Schema::table('projects', function (Blueprint $table) {
+        Schema::table('tasks', function (Blueprint $table) {
             $table->integer('project_id');
         
             $table->foreign('project_id')->references('id')->on('projects');
